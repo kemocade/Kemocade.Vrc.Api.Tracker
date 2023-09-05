@@ -10,6 +10,14 @@ The JSON file produced by this workflow is designed to be consumed at runtime wi
 
 You can configure this repository to track multiple VRChat Worlds, VRChat Groups, and/or Discord Servers, and the resulting data will be combined into one file.
 
+# Videos
+
+## Overview
+[![Overview Video](http://img.youtube.com/vi/5V-CsOQEF18/0.jpg)](http://www.youtube.com/watch?v=5V-CsOQEF18 "Overview")
+
+## Step-by-Step Tutorial
+***Coming Soon!***
+
 # Prerequisites
 
 In order to track a particular VRChat Group, you will need access to a VRChat account that meets all of the following requirements for each group:
