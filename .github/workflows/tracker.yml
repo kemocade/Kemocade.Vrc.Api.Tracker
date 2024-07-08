@@ -31,10 +31,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
+        uses: actions/checkout@v4
         
       - name: VRChat API Tracker Action
-        uses: kemocade/Kemocade.Vrc.Api.Tracker.Action@da61f2cedae3a5bb1240752e2b739b5f006852a3
+        uses: kemocade/Kemocade.Vrc.Api.Tracker.Action@fdc4dcd69e225719faf645629e543c4b9401abc9
         with:
           output: ${{ env.output }}
           username: ${{ vars.VRCHAT_USERNAME }}
@@ -47,18 +47,18 @@ jobs:
           channels: ${{ vars.DISCORD_CHANNEL_IDS }}
           
       - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@19ee734e017b656528749434335f75a1efb931bc
+        uses: jayanta525/github-pages-directory-listing@624ac8c4e56893256d3772f61a88e3b14d54314e
         with:
           FOLDER: ${{ env.output }}
           
       - name: Setup Pages
-        uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382
+        uses: actions/configure-pages@v5
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@a753861a5debcf57bf8b404356158c8e1e33150c
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ env.output }}
           
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5
+        uses: actions/deploy-pages@v4
